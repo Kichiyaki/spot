@@ -19,10 +19,10 @@ import (
 )
 
 func main() {
-	clientID := flag.String("clientID", "", "")
-	clientSecret := flag.String("clientSecret", "", "")
-	artistsStr := flag.String("artists", "", "")
-	market := flag.String("market", spotify.CountryUSA, "")
+	clientID := flag.String("clientID", "", "unique application identifier, you can read more about it here: https://developer.spotify.com/documentation/general/guides/authorization/app-settings/")
+	clientSecret := flag.String("clientSecret", "", "key used to authorize API calls, you can read more about it here: https://developer.spotify.com/documentation/general/guides/authorization/app-settings/")
+	artistsStr := flag.String("artists", "", "artists, separated by commas, whose songs are to be downloaded")
+	market := flag.String("market", spotify.CountryUSA, "an ISO 3166-1 alpha-2 country code, if a country code is specified, only content that is available in that market will be returned")
 	destDir := flag.String("dest", "./download", "where to download songs")
 	flag.Parse()
 
