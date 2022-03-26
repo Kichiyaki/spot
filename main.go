@@ -61,7 +61,7 @@ func main() {
 		for _, album := range albums {
 			log.Printf("Downloading %s", album.Name)
 			if err := downloadAlbum(artist.Name, album, *destDir); err != nil {
-				log.Printf("couldn't download album '%s': %v", err)
+				log.Printf("couldn't download album '%s': %v", album.Name, err)
 			}
 		}
 
