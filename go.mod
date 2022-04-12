@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/gosimple/slug v1.12.0
 	github.com/zmb3/spotify/v2 v2.0.1
-	golang.org/x/oauth2 v0.0.0-20220309155454-6242fa91716a
+	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5
 )
 
 require (
